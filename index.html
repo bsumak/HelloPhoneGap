@@ -1,10 +1,24 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
 <title>Cordova</title>
 <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
 </head>
 <body>
-<h1>Hello World</h1>
+		<form name="rezervacije" onsubmit="return false">
+			<fieldset>
+				<legend>Vaši podatki </legend>
+			    <label>Rojstni datum: <input type="date" name="rojstni_datum" required></label><br>
+			    <label>Teden:<input type="week" name="teden"></label><br>			            
+			    <label>Mesec:<input type="month" name="mesec"></label><br>
+			    <label>Datum in čas:<input type="datetime" name="datuminura"></label><br>
+			    <label>Čas:<input type="time" name="ura"></label><br>
+   			    <label>Število naročil: <input type="number" name="st_narocil" min="2" max="10"></label><br>
+			    <label>Število naročil: <input type="range" name="st_narocil" min="2" max="10"></label><br>
+			</fieldset>
+					
+			<input type="reset" value="Ponastavi">
+			<input type="submit" value="Pošlji">
+		</form>	
 </body>
 </html>
